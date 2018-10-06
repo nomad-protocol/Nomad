@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Sidebar from './Sidebar';
 import {Link} from 'react-router-dom';
+import {web3} from './contract/web3util';
+import vote from './contract/vote';
 
 const votes = [
   { 
@@ -23,6 +25,19 @@ function percentOf(a,b) {
 }
 
 class Ballot extends Component {
+  vote(supports) {
+    if (web3) {
+      web3.eth.getAccounts().then((accounts) => {
+        let account = accounts[0];
+        if (account) {
+          vote(supports, account).then(() => {
+            // TODO: Up the votes
+            debugger;
+          });
+        }
+      });
+    }
+  }
   render() {
     return (
       <div className="app">
@@ -59,10 +74,10 @@ class Ballot extends Component {
                       <div className="amount">{ no }</div>
                     </div>
                     <div className="actions">
-                      <div className="btn-primary btn">
+                      <div className="btn-primary btn" onClick={() => this.vote(true)}>
                         Vote Yes
                       </div>
-                      <div className="btn-danger btn">
+                      <div className="btn-danger btn" onClick={() => this.vote(false)}>
                         Vote No
                       </div>
                     </div>
