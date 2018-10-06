@@ -3,7 +3,7 @@ import {Provider} from 'react-redux';
 import {Route, Switch, BrowserRouter} from 'react-router-dom';
 import store from '../store';
 import Ballot from './Ballot';
-import Games from './Games';
+import Worlds from './Worlds';
 import Inventory from './Inventory';
 import Trading from './Trading';
 
@@ -14,7 +14,7 @@ class App extends Component {
           <BrowserRouter>
             <Switch>
               <Route path="/" exact component={Ballot}/>
-              <Route path="/games" component={Games}/>
+              <Route path="/worlds" component={Worlds}/>
               <Route path="/inventory" component={Inventory}/>
               <Route path="/trading" component={Trading}/>
             </Switch>

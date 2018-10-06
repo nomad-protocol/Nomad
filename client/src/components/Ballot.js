@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Sidebar from './Sidebar';
+import {Link} from 'react-router-dom';
 
 class Ballot extends Component {
   render() {
@@ -17,15 +18,18 @@ class Ballot extends Component {
           </div>
           <div className="votes"> 
             <div className="vote">
-              <p>
-                Allow BrowserQuest to spawn 10 red swords?
+              <p className="question">
+                Allow <Link to="/worlds">BrowserQuest</Link> to spawn 10 red swords?
               </p>
               <div className="choice yes">
-                <div className="text">100%</div>
+                <div className="text">Yes Votes</div>
                 <div className="bar"></div>
+                <div>50</div>
               </div>
               <div className="choice no">
-                <div className="text">0%</div>
+                <div className="text">No Votes</div>
+                <div className="bar"></div>
+                <div>0</div>
               </div>
             </div>
           </div>
