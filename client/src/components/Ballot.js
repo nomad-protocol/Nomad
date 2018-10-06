@@ -6,8 +6,8 @@ class Ballot extends Component {
     return (
       <div className="app">
         <Sidebar />
-        <div className="ballot">
-          Ballot
+        <div className="ballot content">
+          <h1> Weekly Ballot </h1>
         </div>
       </div>
     );

@@ -5,28 +5,20 @@ class Sidebar extends Component {
   render() {
     return (
       <div className="sidebar">
-        <ul className="tabs">
-          <li>
-            <NavLink to='/'>
-              Weekly Ballot
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to='/inventory'>
-              Inventory
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to='/trading'>
-              Trading
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to='/games'>
-              Games
-            </NavLink>
-          </li>
-        </ul>
+        <div className="tabs">
+          <NavLink exact to='/'>
+            Weekly Ballot
+          </NavLink>
+          <NavLink to='/inventory'>
+            Inventory
+          </NavLink>
+          <NavLink to='/trading'>
+            Trading
+          </NavLink>
+          <NavLink to='/games'>
+            Games
+          </NavLink>
+        </div>
       </div>
     );
   }

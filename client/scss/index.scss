@@ -6,8 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #282c34;
-  color: white;
+  background-color: white;
 }
 
 code {
@@ -21,6 +20,10 @@ html, body, #root, .app {
 
 .app {
   display: flex;
+}
+
+.content {
+  padding: 20px;
 }
 
 @import 'sidebar';

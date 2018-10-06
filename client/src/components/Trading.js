@@ -6,7 +6,7 @@ class Trading extends Component {
     return (
       <div className="app">
         <Sidebar />
-        <div className="trading">
+        <div className="trading content">
           Trading
         </div>
       </div>

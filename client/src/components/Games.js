@@ -6,7 +6,7 @@ class Games extends Component {
     return (
       <div className="app">
         <Sidebar />
-        <div className="games">
+        <div className="games content">
           Games
         </div>
       </div>
