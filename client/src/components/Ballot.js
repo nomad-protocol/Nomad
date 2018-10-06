@@ -7,13 +7,15 @@ import vote from './contract/vote';
 const votes = [
   { 
     game: 'BrowserQuest',
-    items: '10 NOMAD Swords',
+    quantity: 10,
+    items: 'NOMAD Swords',
     yes: 50,
     no: 0,
   },
   {
     game: 'Rapture',
-    items: '50 Rubber Duckies',
+    quantity: 50,
+    items: 'Rubber Duckies',
     yes: 20,
     no: 33,
   }
@@ -53,11 +55,11 @@ class Ballot extends Component {
           </div>
           <div className="votes"> 
             {
-              votes.map(({game, items, yes, no}) => {
+              votes.map(({game, items, yes, no, quantity}) => {
                 return (
                   <div className="vote">
                     <p className="question">
-                      Allow <Link to="/worlds">{ game }</Link> to spawn { items }?
+                      Allow <Link to="/worlds">{ game }</Link> to spawn {quantity} { items }?
                     </p>
                     <div className="choice yes">
                       <div className="type">Yes Votes</div>
