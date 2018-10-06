@@ -1,0 +1,13 @@
+.app .header {
+  .tabs {
+    display: flex;
+    > li {
+      list-style: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      &.active {
+        border-bottom: 1px solid blue;
+      }
+    }
+  }
+}
