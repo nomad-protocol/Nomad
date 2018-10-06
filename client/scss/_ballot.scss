@@ -32,6 +32,35 @@
       border: 1px solid #E6ECF1;
       background-color: white;
 
+      .choice {
+        display: flex;
+        .type {
+          width: 80px;
+        }
+        .amount {
+          width: 60px;
+        }
+        .bar {
+          flex-grow: 1;
+          height: 10px;
+          border-radius: 10px;
+          margin: 5px;
+        }
+        &.yes .bar {
+          background-color: $main-accent;
+        }
+        &.no .bar {
+          background-color: $main-danger;
+        }
+      }
+
+      .actions {
+        margin-top: 12px;
+        .btn {
+          margin-right: 10px;
+        }
+      }
+
       .question {
         margin: 20px 0;
         font-size: 1.5em;
