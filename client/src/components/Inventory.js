@@ -7,7 +7,14 @@ class Inventory extends Component {
       <div className="app">
         <Sidebar />
         <div className="inventory content">
-          Inventory
+          <div className="heading">
+            <h1> 
+              Check out your Items
+            </h1> 
+            <p>
+              And see what world they are in!
+            </p>
+          </div>
         </div>
       </div>
     );
