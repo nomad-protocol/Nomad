@@ -23,7 +23,8 @@ html, body, #root, .app {
 }
 
 .content {
-  padding: 20px;
+  width: 100%;
 }
 
 @import 'sidebar';
+@import 'ballot';
