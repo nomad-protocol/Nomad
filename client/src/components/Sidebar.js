@@ -15,8 +15,8 @@ class Sidebar extends Component {
           <NavLink to='/trading'>
             Trading
           </NavLink>
-          <NavLink to='/games'>
-            Games
+          <NavLink to='/worlds'>
+            Worlds
           </NavLink>
         </div>
       </div>
