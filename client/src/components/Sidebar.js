@@ -7,21 +7,21 @@ class Sidebar extends Component {
     return (
       <div className="sidebar">
         <div className="tabs">
-          <NavLink exact to='/'>
+          <NavLink className="home" exact to='/'>
             <SVG name="home"/>
-            Dashboard
+            <div className="text">Dashboard</div>
           </NavLink>
-          <NavLink to='/inventory'>
+          <NavLink className="inventory" to='/inventory'>
             <SVG name="inventory"/>
-            Inventory
+            <div className="text">Inventory</div>
           </NavLink>
-          <NavLink to='/trading'>
+          <NavLink className="trading" to='/trading'>
             <SVG name="briefcase"/>
-            Trading
+            <div className="text">Trading</div>
           </NavLink>
-          <NavLink to='/worlds'>
+          <NavLink className="worlds" to='/worlds'>
             <SVG name="world"/>
-            Worlds
+            <div className="text">Worlds</div>
           </NavLink>
         </div>
       </div>

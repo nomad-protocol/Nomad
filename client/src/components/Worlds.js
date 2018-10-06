@@ -31,6 +31,22 @@ class Worlds extends Component {
               Play Game
             </div>
           </div>
+          <div className="world">
+            <div className="header">
+              <div className="logo">
+                <img src="/monster.png" />
+              </div>
+              <div className="title">
+                Rapture  
+              </div>
+            </div>
+            <div className="description"> 
+              An top-down shooter with a big boss worm!
+            </div>
+            <div className="btn btn-primary">
+              Play Game
+            </div>
+          </div>
         </div>
       </div>
     );
