@@ -1,6 +1,8 @@
 pragma solidity ^0.4.18;
+import "./NomadAsset.sol";
 
 contract Nomad {
+  NomadAsset NomadAssetContract;
 
   struct Item {
     string name;
@@ -13,8 +15,9 @@ contract Nomad {
     string name;
   }
 
-  function Nomad() public {
+  function Nomad(address _NomadAssetAddress) public {
     // take in the ERC721 address
+    NomadAssetContract = NomadAsset(_NomadAssetAddress);
   }
 
   World[] public worlds;

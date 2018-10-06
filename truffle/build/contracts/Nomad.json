@@ -1,0 +1,2681 @@
+{
+  "contractName": "Nomad",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "worlds",
+      "outputs": [
+        {
+          "name": "numItems",
+          "type": "uint256"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_name",
+          "type": "string"
+        }
+      ],
+      "name": "createWorld",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_idx",
+          "type": "uint256"
+        },
+        {
+          "name": "_name",
+          "type": "string"
+        },
+        {
+          "name": "_quantity",
+          "type": "uint256"
+        }
+      ],
+      "name": "vote",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_worldIdx",
+          "type": "uint256"
+        },
+        {
+          "name": "_itemId",
+          "type": "uint256"
+        }
+      ],
+      "name": "findItem",
+      "outputs": [
+        {
+          "name": "_name",
+          "type": "string"
+        },
+        {
+          "name": "_quantity",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506040516020806106788339810180604052810190808051906020019092919050505050610635806100436000396000f300608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633a1956ce14610067578063a134808314610114578063dc7a21d9146101cb578063f0f4545714610234575b600080fd5b34801561007357600080fd5b50610092600480360381019080803590602001909291905050506102b1565b6040518083815260200180602001828103825283818151815260200191508051906020019080838360005b838110156100d85780820151818401526020810190506100bd565b50505050905090810190601f1680156101055780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b34801561012057600080fd5b50610149600480360381019080803590602001909291908035906020019092919050505061037c565b6040518080602001838152602001828103825284818151815260200191508051906020019080838360005b8381101561018f578082015181840152602081019050610174565b50505050905090810190601f1680156101bc5780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b3480156101d757600080fd5b50610232600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290505050610462565b005b34801561024057600080fd5b506102af60048036038101908080359060200190929190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001909291905050506104d2565b005b6000818154811015156102c057fe5b9060005260206000209060030201600091509050806001015490806002018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103725780601f1061034757610100808354040283529160200191610372565b820191906000526020600020905b81548152906001019060200180831161035557829003601f168201915b5050505050905082565b606060008060008581548110151561039057fe5b906000526020600020906003020160000160008581526020019081526020016000209050806000018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561044c5780601f106104215761010080835404028352916020019161044c565b820191906000526020600020905b81548152906001019060200180831161042f57829003601f168201915b5050505050925080600101549150509250929050565b600060408051908101604052806000815260200183815250908060018154018082558091505090600182039060005260206000209060030201600090919290919091506000820151816001015560208201518160020190805190602001906104cb929190610564565b5050505050565b600080848154811015156104e257fe5b9060005260206000209060030201905060408051908101604052808481526020018381525081600001600083600101548152602001908152602001600020600082015181600001908051906020019061053c929190610564565b5060208201518160010155905050806001016000815480929190600101919050555050505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106105a557805160ff19168380011785556105d3565b828001600101855582156105d3579182015b828111156105d25782518255916020019190600101906105b7565b5b5090506105e091906105e4565b5090565b61060691905b808211156106025760008160009055506001016105ea565b5090565b905600a165627a7a72305820bcbef555a053119a775c177a14d537290bcae539f9d37b9cd876bb855b67680a0029",
+  "deployedBytecode": "0x608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633a1956ce14610067578063a134808314610114578063dc7a21d9146101cb578063f0f4545714610234575b600080fd5b34801561007357600080fd5b50610092600480360381019080803590602001909291905050506102b1565b6040518083815260200180602001828103825283818151815260200191508051906020019080838360005b838110156100d85780820151818401526020810190506100bd565b50505050905090810190601f1680156101055780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b34801561012057600080fd5b50610149600480360381019080803590602001909291908035906020019092919050505061037c565b6040518080602001838152602001828103825284818151815260200191508051906020019080838360005b8381101561018f578082015181840152602081019050610174565b50505050905090810190601f1680156101bc5780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b3480156101d757600080fd5b50610232600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290505050610462565b005b34801561024057600080fd5b506102af60048036038101908080359060200190929190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001909291905050506104d2565b005b6000818154811015156102c057fe5b9060005260206000209060030201600091509050806001015490806002018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103725780601f1061034757610100808354040283529160200191610372565b820191906000526020600020905b81548152906001019060200180831161035557829003601f168201915b5050505050905082565b606060008060008581548110151561039057fe5b906000526020600020906003020160000160008581526020019081526020016000209050806000018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561044c5780601f106104215761010080835404028352916020019161044c565b820191906000526020600020905b81548152906001019060200180831161042f57829003601f168201915b5050505050925080600101549150509250929050565b600060408051908101604052806000815260200183815250908060018154018082558091505090600182039060005260206000209060030201600090919290919091506000820151816001015560208201518160020190805190602001906104cb929190610564565b5050505050565b600080848154811015156104e257fe5b9060005260206000209060030201905060408051908101604052808481526020018381525081600001600083600101548152602001908152602001600020600082015181600001908051906020019061053c929190610564565b5060208201518160010155905050806001016000815480929190600101919050555050505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106105a557805160ff19168380011785556105d3565b828001600101855582156105d3579182015b828111156105d25782518255916020019190600101906105b7565b5b5090506105e091906105e4565b5090565b61060691905b808211156106025760008160009055506001016105ea565b5090565b905600a165627a7a72305820bcbef555a053119a775c177a14d537290bcae539f9d37b9cd876bb855b67680a0029",
+  "sourceMap": "26:826:2:-;;;194:72;8:9:-1;5:2;;;30:1;27;20:12;5:2;194:72:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;26:826;;;;;;",
+  "deployedSourceMap": "26:826:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;270:21;;8:9:-1;5:2;;;30:1;27;20:12;5:2;270:21:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;270:21:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;635:215;;8:9:-1;5:2;;;30:1;27;20:12;5:2;635:215:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;635:215:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;296:99;;8:9:-1;5:2;;;30:1;27;20:12;5:2;296:99:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;399:232;;8:9:-1;5:2;;;30:1;27;20:12;5:2;399:232:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;270:21;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;635:215::-;703:12;717:14;739:17;759:6;766:9;759:17;;;;;;;;;;;;;;;;;;;;:23;;:32;783:7;759:32;;;;;;;;;;;739:52;;805:4;:9;;797:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;832:4;:13;;;820:25;;635:215;;;;;;:::o;296:99::-;344:6;356:33;;;;;;;;;386:1;356:33;;;;369:5;356:33;;;344:46;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;344:46:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;296:99;:::o;399:232::-;467:19;489:6;496:4;489:12;;;;;;;;;;;;;;;;;;;;467:34;;537:22;;;;;;;;;542:5;537:22;;;;549:9;537:22;;;507:5;:11;;:27;519:5;:14;;;507:27;;;;;;;;;;;:52;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;610:5;:14;;;:16;;;;;;;;;;;;;399:232;;;;:::o;26:826::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.18;\n\ncontract Nomad {\n\n  struct Item {\n    string name;\n    uint quantity;\n  }\n\n  struct World {\n    mapping(uint => Item) items;\n    uint numItems;\n    string name;\n  }\n\n  function Nomad(address _) public {\n    // take in the ERC721 address\n  }\n\n  World[] public worlds;\n\n  function createWorld(string _name) public {\n    worlds.push(World({name: _name, numItems: 0}));\n  }\n\n  function vote(uint _idx, string _name, uint _quantity) public {\n    World storage world = worlds[_idx];\n    world.items[world.numItems] = Item(_name, _quantity); // <-- where we should plug in Cody's ERC721\n    world.numItems++;\n  }\n\n  function findItem(uint _worldIdx, uint _itemId) public view returns(string _name, uint _quantity) {\n    Item storage item = worlds[_worldIdx].items[_itemId];\n    _name = item.name;\n    _quantity = item.quantity;\n  }\n}\n",
+  "sourcePath": "/home/cody/Desktop/Nomad/Nomad/truffle/contracts/Nomad.sol",
+  "ast": {
+    "absolutePath": "/home/cody/Desktop/Nomad/Nomad/truffle/contracts/Nomad.sol",
+    "exportedSymbols": {
+      "Nomad": [
+        765
+      ]
+    },
+    "id": 766,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 662,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 765,
+        "linearizedBaseContracts": [
+          765
+        ],
+        "name": "Nomad",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Nomad.Item",
+            "id": 667,
+            "members": [
+              {
+                "constant": false,
+                "id": 664,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 667,
+                "src": "64:11:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 663,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "64:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 666,
+                "name": "quantity",
+                "nodeType": "VariableDeclaration",
+                "scope": 667,
+                "src": "81:13:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 665,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "81:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Item",
+            "nodeType": "StructDefinition",
+            "scope": 765,
+            "src": "46:53:2",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Nomad.World",
+            "id": 676,
+            "members": [
+              {
+                "constant": false,
+                "id": 671,
+                "name": "items",
+                "nodeType": "VariableDeclaration",
+                "scope": 676,
+                "src": "122:27:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Item_$667_storage_$",
+                  "typeString": "mapping(uint256 => struct Nomad.Item)"
+                },
+                "typeName": {
+                  "id": 670,
+                  "keyType": {
+                    "id": 668,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "130:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "Mapping",
+                  "src": "122:21:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Item_$667_storage_$",
+                    "typeString": "mapping(uint256 => struct Nomad.Item)"
+                  },
+                  "valueType": {
+                    "contractScope": null,
+                    "id": 669,
+                    "name": "Item",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 667,
+                    "src": "138:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Item_$667_storage_ptr",
+                      "typeString": "struct Nomad.Item"
+                    }
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 673,
+                "name": "numItems",
+                "nodeType": "VariableDeclaration",
+                "scope": 676,
+                "src": "155:13:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 672,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "155:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 675,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 676,
+                "src": "174:11:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 674,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "174:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "World",
+            "nodeType": "StructDefinition",
+            "scope": 765,
+            "src": "103:87:2",
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 681,
+              "nodeType": "Block",
+              "src": "227:39:2",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 682,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "Nomad",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 679,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 678,
+                  "name": "_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 682,
+                  "src": "209:9:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 677,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "209:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "208:11:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 680,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "227:0:2"
+            },
+            "scope": 765,
+            "src": "194:72:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 685,
+            "name": "worlds",
+            "nodeType": "VariableDeclaration",
+            "scope": 765,
+            "src": "270:21:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_World_$676_storage_$dyn_storage",
+              "typeString": "struct Nomad.World[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 683,
+                "name": "World",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 676,
+                "src": "270:5:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_World_$676_storage_ptr",
+                  "typeString": "struct Nomad.World"
+                }
+              },
+              "id": 684,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "270:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_World_$676_storage_$dyn_storage_ptr",
+                "typeString": "struct Nomad.World[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 699,
+              "nodeType": "Block",
+              "src": "338:57:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 694,
+                            "name": "_name",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 687,
+                            "src": "369:5:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "hexValue": "30",
+                            "id": 695,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "386:1:2",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_rational_0_by_1",
+                              "typeString": "int_const 0"
+                            },
+                            "value": "0"
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 693,
+                          "name": "World",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 676,
+                          "src": "356:5:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_struct$_World_$676_storage_ptr_$",
+                            "typeString": "type(struct Nomad.World storage pointer)"
+                          }
+                        },
+                        "id": 696,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "structConstructorCall",
+                        "lValueRequested": false,
+                        "names": [
+                          "name",
+                          "numItems"
+                        ],
+                        "nodeType": "FunctionCall",
+                        "src": "356:33:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_World_$676_memory",
+                          "typeString": "struct Nomad.World memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_World_$676_memory",
+                          "typeString": "struct Nomad.World memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 690,
+                        "name": "worlds",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 685,
+                        "src": "344:6:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_World_$676_storage_$dyn_storage",
+                          "typeString": "struct Nomad.World storage ref[] storage ref"
+                        }
+                      },
+                      "id": 692,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "344:11:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_World_$676_storage_$returns$_t_uint256_$",
+                        "typeString": "function (struct Nomad.World storage ref) returns (uint256)"
+                      }
+                    },
+                    "id": 697,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "344:46:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 698,
+                  "nodeType": "ExpressionStatement",
+                  "src": "344:46:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 700,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "createWorld",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 688,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 687,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 700,
+                  "src": "317:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 686,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "317:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "316:14:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 689,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "338:0:2"
+            },
+            "scope": 765,
+            "src": "296:99:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 732,
+              "nodeType": "Block",
+              "src": "461:170:2",
+              "statements": [
+                {
+                  "assignments": [
+                    710
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 710,
+                      "name": "world",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 733,
+                      "src": "467:19:2",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_World_$676_storage_ptr",
+                        "typeString": "struct Nomad.World"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 709,
+                        "name": "World",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 676,
+                        "src": "467:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_World_$676_storage_ptr",
+                          "typeString": "struct Nomad.World"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 714,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 711,
+                      "name": "worlds",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 685,
+                      "src": "489:6:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_struct$_World_$676_storage_$dyn_storage",
+                        "typeString": "struct Nomad.World storage ref[] storage ref"
+                      }
+                    },
+                    "id": 713,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 712,
+                      "name": "_idx",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 702,
+                      "src": "496:4:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "489:12:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_World_$676_storage",
+                      "typeString": "struct Nomad.World storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "467:34:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 725,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 715,
+                          "name": "world",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 710,
+                          "src": "507:5:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_World_$676_storage_ptr",
+                            "typeString": "struct Nomad.World storage pointer"
+                          }
+                        },
+                        "id": 719,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "items",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 671,
+                        "src": "507:11:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Item_$667_storage_$",
+                          "typeString": "mapping(uint256 => struct Nomad.Item storage ref)"
+                        }
+                      },
+                      "id": 720,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 717,
+                          "name": "world",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 710,
+                          "src": "519:5:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_World_$676_storage_ptr",
+                            "typeString": "struct Nomad.World storage pointer"
+                          }
+                        },
+                        "id": 718,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "numItems",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 673,
+                        "src": "519:14:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "507:27:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Item_$667_storage",
+                        "typeString": "struct Nomad.Item storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 722,
+                          "name": "_name",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 704,
+                          "src": "542:5:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 723,
+                          "name": "_quantity",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 706,
+                          "src": "549:9:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "id": 721,
+                        "name": "Item",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 667,
+                        "src": "537:4:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Item_$667_storage_ptr_$",
+                          "typeString": "type(struct Nomad.Item storage pointer)"
+                        }
+                      },
+                      "id": 724,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "537:22:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Item_$667_memory",
+                        "typeString": "struct Nomad.Item memory"
+                      }
+                    },
+                    "src": "507:52:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Item_$667_storage",
+                      "typeString": "struct Nomad.Item storage ref"
+                    }
+                  },
+                  "id": 726,
+                  "nodeType": "ExpressionStatement",
+                  "src": "507:52:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 730,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "610:16:2",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 727,
+                        "name": "world",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 710,
+                        "src": "610:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_World_$676_storage_ptr",
+                          "typeString": "struct Nomad.World storage pointer"
+                        }
+                      },
+                      "id": 729,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "numItems",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 673,
+                      "src": "610:14:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 731,
+                  "nodeType": "ExpressionStatement",
+                  "src": "610:16:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 733,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "vote",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 707,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 702,
+                  "name": "_idx",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 733,
+                  "src": "413:9:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 701,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "413:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 704,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 733,
+                  "src": "424:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 703,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "424:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 706,
+                  "name": "_quantity",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 733,
+                  "src": "438:14:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 705,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "438:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "412:41:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 708,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "461:0:2"
+            },
+            "scope": 765,
+            "src": "399:232:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 763,
+              "nodeType": "Block",
+              "src": "733:117:2",
+              "statements": [
+                {
+                  "assignments": [
+                    745
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 745,
+                      "name": "item",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 764,
+                      "src": "739:17:2",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Item_$667_storage_ptr",
+                        "typeString": "struct Nomad.Item"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 744,
+                        "name": "Item",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 667,
+                        "src": "739:4:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Item_$667_storage_ptr",
+                          "typeString": "struct Nomad.Item"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 752,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 746,
+                          "name": "worlds",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 685,
+                          "src": "759:6:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_array$_t_struct$_World_$676_storage_$dyn_storage",
+                            "typeString": "struct Nomad.World storage ref[] storage ref"
+                          }
+                        },
+                        "id": 748,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 747,
+                          "name": "_worldIdx",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 735,
+                          "src": "766:9:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "759:17:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_World_$676_storage",
+                          "typeString": "struct Nomad.World storage ref"
+                        }
+                      },
+                      "id": 749,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "items",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 671,
+                      "src": "759:23:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Item_$667_storage_$",
+                        "typeString": "mapping(uint256 => struct Nomad.Item storage ref)"
+                      }
+                    },
+                    "id": 751,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 750,
+                      "name": "_itemId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 737,
+                      "src": "783:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "759:32:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Item_$667_storage",
+                      "typeString": "struct Nomad.Item storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "739:52:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 756,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 753,
+                      "name": "_name",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 740,
+                      "src": "797:5:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 754,
+                        "name": "item",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 745,
+                        "src": "805:4:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Item_$667_storage_ptr",
+                          "typeString": "struct Nomad.Item storage pointer"
+                        }
+                      },
+                      "id": 755,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "name",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 664,
+                      "src": "805:9:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "src": "797:17:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory_ptr",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 757,
+                  "nodeType": "ExpressionStatement",
+                  "src": "797:17:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 761,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 758,
+                      "name": "_quantity",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 742,
+                      "src": "820:9:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 759,
+                        "name": "item",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 745,
+                        "src": "832:4:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Item_$667_storage_ptr",
+                          "typeString": "struct Nomad.Item storage pointer"
+                        }
+                      },
+                      "id": 760,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "quantity",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 666,
+                      "src": "832:13:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "820:25:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 762,
+                  "nodeType": "ExpressionStatement",
+                  "src": "820:25:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 764,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "findItem",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 738,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 735,
+                  "name": "_worldIdx",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 764,
+                  "src": "653:14:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 734,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "653:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 737,
+                  "name": "_itemId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 764,
+                  "src": "669:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 736,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "669:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "652:30:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 743,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 740,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 764,
+                  "src": "703:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 739,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "703:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 742,
+                  "name": "_quantity",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 764,
+                  "src": "717:14:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 741,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "717:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "702:30:2"
+            },
+            "scope": 765,
+            "src": "635:215:2",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 766,
+        "src": "26:826:2"
+      }
+    ],
+    "src": "0:853:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/cody/Desktop/Nomad/Nomad/truffle/contracts/Nomad.sol",
+    "exportedSymbols": {
+      "Nomad": [
+        765
+      ]
+    },
+    "id": 766,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 662,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 765,
+        "linearizedBaseContracts": [
+          765
+        ],
+        "name": "Nomad",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Nomad.Item",
+            "id": 667,
+            "members": [
+              {
+                "constant": false,
+                "id": 664,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 667,
+                "src": "64:11:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 663,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "64:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 666,
+                "name": "quantity",
+                "nodeType": "VariableDeclaration",
+                "scope": 667,
+                "src": "81:13:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 665,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "81:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Item",
+            "nodeType": "StructDefinition",
+            "scope": 765,
+            "src": "46:53:2",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Nomad.World",
+            "id": 676,
+            "members": [
+              {
+                "constant": false,
+                "id": 671,
+                "name": "items",
+                "nodeType": "VariableDeclaration",
+                "scope": 676,
+                "src": "122:27:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Item_$667_storage_$",
+                  "typeString": "mapping(uint256 => struct Nomad.Item)"
+                },
+                "typeName": {
+                  "id": 670,
+                  "keyType": {
+                    "id": 668,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "130:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "Mapping",
+                  "src": "122:21:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Item_$667_storage_$",
+                    "typeString": "mapping(uint256 => struct Nomad.Item)"
+                  },
+                  "valueType": {
+                    "contractScope": null,
+                    "id": 669,
+                    "name": "Item",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 667,
+                    "src": "138:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Item_$667_storage_ptr",
+                      "typeString": "struct Nomad.Item"
+                    }
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 673,
+                "name": "numItems",
+                "nodeType": "VariableDeclaration",
+                "scope": 676,
+                "src": "155:13:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 672,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "155:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 675,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 676,
+                "src": "174:11:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 674,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "174:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "World",
+            "nodeType": "StructDefinition",
+            "scope": 765,
+            "src": "103:87:2",
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 681,
+              "nodeType": "Block",
+              "src": "227:39:2",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 682,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "Nomad",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 679,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 678,
+                  "name": "_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 682,
+                  "src": "209:9:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 677,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "209:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "208:11:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 680,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "227:0:2"
+            },
+            "scope": 765,
+            "src": "194:72:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 685,
+            "name": "worlds",
+            "nodeType": "VariableDeclaration",
+            "scope": 765,
+            "src": "270:21:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_World_$676_storage_$dyn_storage",
+              "typeString": "struct Nomad.World[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 683,
+                "name": "World",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 676,
+                "src": "270:5:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_World_$676_storage_ptr",
+                  "typeString": "struct Nomad.World"
+                }
+              },
+              "id": 684,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "270:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_World_$676_storage_$dyn_storage_ptr",
+                "typeString": "struct Nomad.World[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 699,
+              "nodeType": "Block",
+              "src": "338:57:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 694,
+                            "name": "_name",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 687,
+                            "src": "369:5:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "hexValue": "30",
+                            "id": 695,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "386:1:2",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_rational_0_by_1",
+                              "typeString": "int_const 0"
+                            },
+                            "value": "0"
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 693,
+                          "name": "World",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 676,
+                          "src": "356:5:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_struct$_World_$676_storage_ptr_$",
+                            "typeString": "type(struct Nomad.World storage pointer)"
+                          }
+                        },
+                        "id": 696,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "structConstructorCall",
+                        "lValueRequested": false,
+                        "names": [
+                          "name",
+                          "numItems"
+                        ],
+                        "nodeType": "FunctionCall",
+                        "src": "356:33:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_World_$676_memory",
+                          "typeString": "struct Nomad.World memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_World_$676_memory",
+                          "typeString": "struct Nomad.World memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 690,
+                        "name": "worlds",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 685,
+                        "src": "344:6:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_World_$676_storage_$dyn_storage",
+                          "typeString": "struct Nomad.World storage ref[] storage ref"
+                        }
+                      },
+                      "id": 692,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "344:11:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_World_$676_storage_$returns$_t_uint256_$",
+                        "typeString": "function (struct Nomad.World storage ref) returns (uint256)"
+                      }
+                    },
+                    "id": 697,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "344:46:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 698,
+                  "nodeType": "ExpressionStatement",
+                  "src": "344:46:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 700,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "createWorld",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 688,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 687,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 700,
+                  "src": "317:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 686,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "317:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "316:14:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 689,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "338:0:2"
+            },
+            "scope": 765,
+            "src": "296:99:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 732,
+              "nodeType": "Block",
+              "src": "461:170:2",
+              "statements": [
+                {
+                  "assignments": [
+                    710
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 710,
+                      "name": "world",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 733,
+                      "src": "467:19:2",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_World_$676_storage_ptr",
+                        "typeString": "struct Nomad.World"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 709,
+                        "name": "World",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 676,
+                        "src": "467:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_World_$676_storage_ptr",
+                          "typeString": "struct Nomad.World"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 714,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 711,
+                      "name": "worlds",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 685,
+                      "src": "489:6:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_struct$_World_$676_storage_$dyn_storage",
+                        "typeString": "struct Nomad.World storage ref[] storage ref"
+                      }
+                    },
+                    "id": 713,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 712,
+                      "name": "_idx",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 702,
+                      "src": "496:4:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "489:12:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_World_$676_storage",
+                      "typeString": "struct Nomad.World storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "467:34:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 725,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 715,
+                          "name": "world",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 710,
+                          "src": "507:5:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_World_$676_storage_ptr",
+                            "typeString": "struct Nomad.World storage pointer"
+                          }
+                        },
+                        "id": 719,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "items",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 671,
+                        "src": "507:11:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Item_$667_storage_$",
+                          "typeString": "mapping(uint256 => struct Nomad.Item storage ref)"
+                        }
+                      },
+                      "id": 720,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 717,
+                          "name": "world",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 710,
+                          "src": "519:5:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_World_$676_storage_ptr",
+                            "typeString": "struct Nomad.World storage pointer"
+                          }
+                        },
+                        "id": 718,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "numItems",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 673,
+                        "src": "519:14:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "507:27:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Item_$667_storage",
+                        "typeString": "struct Nomad.Item storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 722,
+                          "name": "_name",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 704,
+                          "src": "542:5:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 723,
+                          "name": "_quantity",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 706,
+                          "src": "549:9:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "id": 721,
+                        "name": "Item",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 667,
+                        "src": "537:4:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Item_$667_storage_ptr_$",
+                          "typeString": "type(struct Nomad.Item storage pointer)"
+                        }
+                      },
+                      "id": 724,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "537:22:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Item_$667_memory",
+                        "typeString": "struct Nomad.Item memory"
+                      }
+                    },
+                    "src": "507:52:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Item_$667_storage",
+                      "typeString": "struct Nomad.Item storage ref"
+                    }
+                  },
+                  "id": 726,
+                  "nodeType": "ExpressionStatement",
+                  "src": "507:52:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 730,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "610:16:2",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 727,
+                        "name": "world",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 710,
+                        "src": "610:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_World_$676_storage_ptr",
+                          "typeString": "struct Nomad.World storage pointer"
+                        }
+                      },
+                      "id": 729,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "numItems",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 673,
+                      "src": "610:14:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 731,
+                  "nodeType": "ExpressionStatement",
+                  "src": "610:16:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 733,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "vote",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 707,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 702,
+                  "name": "_idx",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 733,
+                  "src": "413:9:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 701,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "413:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 704,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 733,
+                  "src": "424:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 703,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "424:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 706,
+                  "name": "_quantity",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 733,
+                  "src": "438:14:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 705,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "438:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "412:41:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 708,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "461:0:2"
+            },
+            "scope": 765,
+            "src": "399:232:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 763,
+              "nodeType": "Block",
+              "src": "733:117:2",
+              "statements": [
+                {
+                  "assignments": [
+                    745
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 745,
+                      "name": "item",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 764,
+                      "src": "739:17:2",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Item_$667_storage_ptr",
+                        "typeString": "struct Nomad.Item"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 744,
+                        "name": "Item",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 667,
+                        "src": "739:4:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Item_$667_storage_ptr",
+                          "typeString": "struct Nomad.Item"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 752,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 746,
+                          "name": "worlds",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 685,
+                          "src": "759:6:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_array$_t_struct$_World_$676_storage_$dyn_storage",
+                            "typeString": "struct Nomad.World storage ref[] storage ref"
+                          }
+                        },
+                        "id": 748,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 747,
+                          "name": "_worldIdx",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 735,
+                          "src": "766:9:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "759:17:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_World_$676_storage",
+                          "typeString": "struct Nomad.World storage ref"
+                        }
+                      },
+                      "id": 749,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "items",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 671,
+                      "src": "759:23:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Item_$667_storage_$",
+                        "typeString": "mapping(uint256 => struct Nomad.Item storage ref)"
+                      }
+                    },
+                    "id": 751,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 750,
+                      "name": "_itemId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 737,
+                      "src": "783:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "759:32:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Item_$667_storage",
+                      "typeString": "struct Nomad.Item storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "739:52:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 756,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 753,
+                      "name": "_name",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 740,
+                      "src": "797:5:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 754,
+                        "name": "item",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 745,
+                        "src": "805:4:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Item_$667_storage_ptr",
+                          "typeString": "struct Nomad.Item storage pointer"
+                        }
+                      },
+                      "id": 755,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "name",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 664,
+                      "src": "805:9:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "src": "797:17:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory_ptr",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 757,
+                  "nodeType": "ExpressionStatement",
+                  "src": "797:17:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 761,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 758,
+                      "name": "_quantity",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 742,
+                      "src": "820:9:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 759,
+                        "name": "item",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 745,
+                        "src": "832:4:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Item_$667_storage_ptr",
+                          "typeString": "struct Nomad.Item storage pointer"
+                        }
+                      },
+                      "id": 760,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "quantity",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 666,
+                      "src": "832:13:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "820:25:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 762,
+                  "nodeType": "ExpressionStatement",
+                  "src": "820:25:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 764,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "findItem",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 738,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 735,
+                  "name": "_worldIdx",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 764,
+                  "src": "653:14:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 734,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "653:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 737,
+                  "name": "_itemId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 764,
+                  "src": "669:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 736,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "669:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "652:30:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 743,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 740,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 764,
+                  "src": "703:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 739,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "703:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 742,
+                  "name": "_quantity",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 764,
+                  "src": "717:14:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 741,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "717:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "702:30:2"
+            },
+            "scope": 765,
+            "src": "635:215:2",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 766,
+        "src": "26:826:2"
+      }
+    ],
+    "src": "0:853:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-10-06T19:19:27.419Z"
+}

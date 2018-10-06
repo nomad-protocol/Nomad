@@ -1,10 +1,14 @@
 const Nomad = artifacts.require('Nomad');
+const NomadAsset = artifacts.require('NomadAsset');
 
 contract('Nomad', (accounts) => {
+  const owner = accounts[0];
   let contract;
+  let assetContract;
 
   beforeEach(async () => {
-    contract = await Nomad.new();
+    assetContract = await NomadAsset.new({from: owner});
+    contract = await Nomad.new(assetContract.address);
   });
 
   describe('adding a world', () => {
