@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Header from './Header';
+import Sidebar from './Sidebar';
 
 class Inventory extends Component {
   render() {
     return (
       <div className="app">
-        <Header />
+        <Sidebar />
         <div className="inventory">
           Inventory
         </div>

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Header from './Header';
+import Sidebar from './Sidebar';
 
 class Trading extends Component {
   render() {
     return (
       <div className="app">
-        <Header />
+        <Sidebar />
         <div className="trading">
           Trading
         </div>

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Header from './Header';
+import Sidebar from './Sidebar';
 
 class Games extends Component {
   render() {
     return (
       <div className="app">
-        <Header />
+        <Sidebar />
         <div className="games">
           Games
         </div>
