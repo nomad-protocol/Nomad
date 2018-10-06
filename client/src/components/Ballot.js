@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
 import Sidebar from './Sidebar';
 import {Link} from 'react-router-dom';
+import {web3} from './contract/web3util';
+import vote from './contract/vote';
 
 const votes = [
   { 
     game: 'BrowserQuest',
-    items: '10 NOMAD Swords',
+    quantity: 10,
+    items: 'NOMAD Swords',
     yes: 50,
     no: 0,
   },
   {
     game: 'Rapture',
-    items: '50 Rubber Duckies',
+    quantity: 50,
+    items: 'Rubber Duckies',
     yes: 20,
     no: 33,
   }
@@ -23,6 +27,19 @@ function percentOf(a,b) {
 }
 
 class Ballot extends Component {
+  vote(supports) {
+    if (web3) {
+      web3.eth.getAccounts().then((accounts) => {
+        let account = accounts[0];
+        if (account) {
+          vote(supports, account).then(() => {
+            // TODO: Up the votes
+            debugger;
+          });
+        }
+      });
+    }
+  }
   render() {
     return (
       <div className="app">
@@ -38,11 +55,11 @@ class Ballot extends Component {
           </div>
           <div className="votes"> 
             {
-              votes.map(({game, items, yes, no}) => {
+              votes.map(({game, items, yes, no, quantity}) => {
                 return (
                   <div className="vote">
                     <p className="question">
-                      Allow <Link to="/worlds">{ game }</Link> to spawn { items }?
+                      Allow <Link to="/worlds">{ game }</Link> to spawn {quantity} { items }?
                     </p>
                     <div className="choice yes">
                       <div className="type">Yes Votes</div>
@@ -59,10 +76,10 @@ class Ballot extends Component {
                       <div className="amount">{ no }</div>
                     </div>
                     <div className="actions">
-                      <div className="btn-primary btn">
+                      <div className="btn-primary btn" onClick={() => this.vote(true)}>
                         Vote Yes
                       </div>
-                      <div className="btn-danger btn">
+                      <div className="btn-danger btn" onClick={() => this.vote(false)}>
                         Vote No
                       </div>
                     </div>
