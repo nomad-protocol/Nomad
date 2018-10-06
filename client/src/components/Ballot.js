@@ -22,14 +22,22 @@ class Ballot extends Component {
                 Allow <Link to="/worlds">BrowserQuest</Link> to spawn 10 red swords?
               </p>
               <div className="choice yes">
-                <div className="text">Yes Votes</div>
+                <div className="type">Yes Votes</div>
                 <div className="bar"></div>
-                <div>50</div>
+                <div className="amount">50</div>
               </div>
               <div className="choice no">
-                <div className="text">No Votes</div>
+                <div className="type">No Votes</div>
                 <div className="bar"></div>
-                <div>0</div>
+                <div className="amount">0</div>
+              </div>
+              <div className="actions">
+                <div className="btn-primary btn">
+                  Vote Yes
+                </div>
+                <div className="btn-danger btn">
+                  Vote No
+                </div>
               </div>
             </div>
           </div>
