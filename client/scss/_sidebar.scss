@@ -11,8 +11,16 @@
       padding: 20px 30px;
       text-decoration: none;
       color: black;
+      display: flex;
+      svg {
+        height: 18px;
+        margin-right: 10px;
+      }
       &.active {
         background-color: #dfe0e0;
+      }
+      &:hover {
+        background-color: #dfe0e06e;
       }
     }
   }
