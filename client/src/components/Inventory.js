@@ -6,7 +6,7 @@ class Inventory extends Component {
     return (
       <div className="app">
         <Sidebar />
-        <div className="inventory">
+        <div className="inventory content">
           Inventory
         </div>
       </div>
