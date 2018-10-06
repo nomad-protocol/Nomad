@@ -4,6 +4,9 @@ import "./NomadAsset.sol";
 contract Nomad {
   NomadAsset NomadAssetContract;
   address public owner;
+  uint256 public totalItems;
+
+  mapping(uint256 => uint256) public itemInWorld;
 
   struct Item {
     string name;
@@ -32,7 +35,12 @@ contract Nomad {
   function vote(uint _worldIdx, string _name, uint _quantity) public {
     World storage world = worlds[_worldIdx];
     world.items[world.numItems] = Item(_name, _quantity); // <-- where we should plug in Cody's ERC721
-    NomadAssetContract.createItem(_name, _worldIdx, world.worldAddress, _quantity);
+    for(uint i = 1; i <= _quantity; i ++) {
+        uint itemId = totalItems + 1;
+        NomadAssetContract.createItem(_name, _worldIdx, world.worldAddress, itemId);
+        itemInWorld[itemId] = _worldIdx;
+        totalItems++;
+    }
     world.numItems++;
   }
 
