@@ -7,7 +7,7 @@ class Sidebar extends Component {
       <div className="sidebar">
         <div className="tabs">
           <NavLink exact to='/'>
-            Weekly Ballot
+            Dashboard
           </NavLink>
           <NavLink to='/inventory'>
             Inventory

@@ -1,0 +1,34 @@
+.ballot {
+  margin: 20px;
+  border: 1px solid #E6ECF1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  .heading {
+    border-bottom: 1px solid #E6ECF1;
+    padding: 20px 0;
+    background-color: white;
+
+    > h1 {
+      margin: 0;
+    }
+
+    > p {
+      margin-top: 10px;
+      padding: 0;
+      color: #aaa;
+    }
+  }
+
+  .votes {
+    background-color: #f5f6f7;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    .vote {
+        margin-top: 10px;
+    }
+  }
+}
