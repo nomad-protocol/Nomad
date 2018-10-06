@@ -1,6 +1,9 @@
 pragma solidity ^0.4.18;
+import "./NomadAsset.sol";
 
 contract Nomad {
+  NomadAsset NomadAssetContract;
+  address public owner;
 
   struct Item {
     string name;
@@ -9,23 +12,27 @@ contract Nomad {
 
   struct World {
     mapping(uint => Item) items;
+    address worldAddress;
     uint numItems;
     string name;
   }
 
-  function Nomad() public {
+  function Nomad(address _NomadAssetAddress) public {
     // take in the ERC721 address
+    owner = msg.sender;
+    NomadAssetContract = NomadAsset(_NomadAssetAddress);
   }
 
   World[] public worlds;
 
-  function createWorld(string _name) public {
-    worlds.push(World({name: _name, numItems: 0}));
+  function createWorld(string _name, address _worldAddress) public {
+    worlds.push(World({name: _name, numItems: 0, worldAddress: _worldAddress}));
   }
 
-  function vote(uint _idx, string _name, uint _quantity) public {
-    World storage world = worlds[_idx];
+  function vote(uint _worldIdx, string _name, uint _quantity) public {
+    World storage world = worlds[_worldIdx];
     world.items[world.numItems] = Item(_name, _quantity); // <-- where we should plug in Cody's ERC721
+    NomadAssetContract.createItem(_name, _worldIdx, world.worldAddress, _quantity);
     world.numItems++;
   }
 
