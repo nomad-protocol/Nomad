@@ -7,7 +7,14 @@ class Trading extends Component {
       <div className="app">
         <Sidebar />
         <div className="trading content">
-          Trading
+          <div className="heading">
+            <h1> 
+              Trade your Items
+            </h1> 
+            <p>
+              Using 0x protocol 
+            </p>
+          </div>
         </div>
       </div>
     );

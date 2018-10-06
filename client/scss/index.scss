@@ -1,3 +1,6 @@
+$main-accent: #8484de;
+$main-danger: #b71616;
+
 body {
   margin: 0;
   padding: 0;
@@ -18,12 +21,35 @@ html, body, #root, .app {
   height: 100%;
 }
 
+a {
+  color: $main-accent;
+  text-decoration: none;
+}
+
 .app {
   display: flex;
 }
 
 .content {
-  padding: 20px;
+  width: 100%;
+}
+
+.btn {
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  &.btn-primary {
+    background-color: $main-accent;
+  }
+  &.btn-danger {
+    background-color: $main-danger;
+  }
 }
 
 @import 'sidebar';
+@import 'ballot';
+@import 'worlds';
+@import 'inventory';
+@import 'trading';

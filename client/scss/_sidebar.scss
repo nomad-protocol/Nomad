@@ -11,10 +11,36 @@
       padding: 20px 30px;
       text-decoration: none;
       color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 10px;
+      text-transform: uppercase;
+      transition: background-color .5s;
+      svg {
+        height: 30px;
+        margin-right: 10px;
+        margin-bottom: 3px;
+      }
+      &:hover {
+        background-color: #dfe0e06e;
+      }
       &.active {
         background-color: #dfe0e0;
-        border-right: 2px solid #0303bd;
       }
+    }
+    // fix the slightly off-center SVGs
+    .home .text {
+      padding-right: 5px;
+    }
+    .inventory .text {
+      padding-right: 7px;
+    }
+    .worlds .text {
+      padding-right: 8px;
+    }
+    .trading .text {
+      padding-right: 10px;
     }
   }
 }
