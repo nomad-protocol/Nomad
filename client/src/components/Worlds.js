@@ -41,7 +41,7 @@ class Worlds extends Component {
               </div>
             </div>
             <div className="description"> 
-              An top-down shooter with a big boss worm!
+              A top-down shooter with a big boss worm!
             </div>
             <div className="btn btn-primary">
               Play Game

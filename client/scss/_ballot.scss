@@ -40,11 +40,13 @@
         .amount {
           width: 60px;
         }
-        .bar {
+        .pct {
           flex-grow: 1;
-          height: 10px;
-          border-radius: 10px;
           margin: 5px;
+          .bar {
+            height: 10px;
+            border-radius: 10px;
+          }
         }
         &.yes .bar {
           background-color: $main-accent;
