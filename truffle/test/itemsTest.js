@@ -11,22 +11,20 @@ contract('NomadAsset', (accounts) => {
         let id;
         beforeEach(async () => {
             contract = await NomadAsset.new({from: owner})
-            id = await contract.itemId.call();
         })
 
         it('should create an item and send to an address', async() => {
-            await contract.createItem(sword, 1, beneficiary, 10, {from: owner})
-            await contract.createItem(dagger, 1, beneficiary, 10, {from: owner})
+            await contract.createItem(sword, 1, beneficiary, 1, {from: owner})
+            await contract.createItem(dagger, 1, beneficiary, 2, {from: owner})
             const balance = await contract.balanceOf(beneficiary);
 
-            assert.equal(balance.toNumber(), 20);
+            assert.equal(balance.toNumber(), 2);
         })
 
         it('should map the item to the world', async() => {
             const world = 1;
-            await contract.createItem(sword, world, beneficiary, 10, {from: owner})
-            id = await contract.itemId.call();
-            worldMapping = await contract.itemToWorld.call(id);
+            await contract.createItem(sword, world, beneficiary, 1, {from: owner})
+            const worldMapping = await contract.itemToWorld.call(1);
 
             assert.equal(worldMapping, world);
         })
@@ -44,21 +42,19 @@ contract('NomadAsset', (accounts) => {
         let id;
         beforeEach(async () => {
             contract = await NomadAsset.new({from: owner})
-            await contract.createItem(sword, 1, beneficiary, 10, {from: owner})
-            id = await contract.itemId.call();
+            await contract.createItem(sword, 1, beneficiary, 1, {from: owner})
         })
 
         it('should only allow the owner of the NFT to trade', async () => {
             await expectThrow(
-                contract.tradeItem(id, trader, {from: owner})
+                contract.tradeItem(1, trader, {from: owner})
             )
         })
 
         it('should transfer an NFT to a new owner', async () => {
-            await contract.tradeItem(id, trader, {from: beneficiary})
-            await contract.createItem(dagger, 5, beneficiary, 10, {from: owner})
-            id = await contract.itemId.call();
-            await contract.tradeItem(id, trader, {from: beneficiary})
+            await contract.tradeItem(1, trader, {from: beneficiary})
+            await contract.createItem(dagger, 5, beneficiary, 2, {from: owner})
+            await contract.tradeItem(2, trader, {from: beneficiary})
             const balance = await contract.balanceOf(trader);
             assert.equal(balance.toNumber(), 2)
         })

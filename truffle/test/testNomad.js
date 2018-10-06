@@ -35,6 +35,12 @@ contract('Nomad', (accounts) => {
           assert.equal(ownerAddress, world);
           assert.equal(0, itemMapped.toNumber());
       });
+
+      it('should mint 10 swords', async () => {
+          let totalItems = await contract.totalItems.call();
+
+          assert.equal(totalItems.toNumber(), 10);
+      })
     });
   });
 });
