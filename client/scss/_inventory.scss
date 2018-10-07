@@ -19,4 +19,33 @@
       color: #aaa;
     }
   }
+
+  .item {
+    margin: 10px 30px;
+    padding: 30px;
+    text-align: left;
+    border: 1px solid #E6ECF1;
+    background-color: white;
+
+    .header {
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 50px;
+        width: auto;
+      }
+
+      .title {
+        font-size: 1.5em;
+        margin-left: 20px;
+      }
+    }
+
+    .description {
+      padding: 20px;
+      font-weight: 200;
+      color: #aaa;
+    }
+  }
 }
