@@ -12,6 +12,13 @@ body {
   background-color: white;
 }
 
+input {
+  padding: 5px;
+  border:2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.25em;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
   monospace;
